@@ -1,10 +1,10 @@
-@import url('typography.css');
+@import url('foundations/colors.css');
+@import url('foundations/typography.css');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
 }
 
 body {
@@ -40,11 +40,6 @@ body {
   color: #555;
 }
 
-.text-content p {
-  font-size: 1rem;
-  color: #666;
-}
-
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -69,37 +64,9 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* Imágenes de ejemplo */
-.grid button:nth-child(1) {
-  background-image: url('assets/images/albert.jpg');
-}
-.grid button:nth-child(2) {
-  background-image: url('assets/images/daniela.jpg');
-}
-.grid button:nth-child(3) {
-  background-image: url('assets/images/ricard.jpg');
-}
-.grid button:nth-child(4) {
-  background-image: url('assets/images/laia.jpg');
-}
-.grid button:nth-child(5) {
-  background-image: url('assets/images/jaume.jpg');
-}
-.grid button:nth-child(6) {
-  background-image: url('assets/images/clara.jpg');
-}
-.grid button:nth-child(7) {
-  background-image: url('assets/images/luis-angel.jpg');
-}
-.grid button:nth-child(8) {
-  background-image: url('assets/images/anna.jpg');
-}
-.grid button:nth-child(9) {
-  background-image: url('assets/images/xavier.jpg');
-}
 /* Modal */
 .modal {
-  display: none;
+  display: block;
   position: fixed;
   top: 0;
   left: 0;
@@ -107,51 +74,83 @@ body {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   justify-content: center;
-  align-items: center;
 }
 
 .modal-content {
   background: white;
-  padding: 20px;
+  padding: 40px;
   border-radius: 10px;
+  display: flex;
+  height: 70%;
+  align-items: flex-start;
+  position: relative;
+  margin: 10%;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.modal-left {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-right: 20px;
 }
 
-.modal img {
-  width: 100px;
-  height: 100px;
+.modal-left img {
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
 }
 
 .modal-details {
+  height: 90%;
+  overflow: scroll;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
 }
 
 .modal-details img {
-  width: 200px;
-  height: auto;
-  margin-bottom: 10px;
+  padding: 60px 0 20px 0;
 }
 
 .modal-details div {
-  text-align: center;
   margin-bottom: 5px;
 }
 
 .modal-details label {
   font-weight: bold;
+  color: var(--purple);
 }
 
 @media (max-width: 768px) {
+  .modal-content {
+    margin: 0%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .image-text {
+    width: 100%;
+    text-align: center;
+  }
   .container {
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+  .image-modal {
+    width: 180px;
+    height: 180px;
   }
   .grid {
     grid-template-columns: repeat(2, 1fr);
@@ -166,6 +165,10 @@ body {
 }
 
 @media (max-width: 500px) {
+  .modal-content {
+    border-radius: 0;
+    height: 100%;
+  }
   .grid {
     grid-template-columns: repeat(1, 1fr);
   }

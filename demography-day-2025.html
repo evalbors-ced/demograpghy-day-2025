@@ -5,12 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Demography day 2025</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <div class="container">
@@ -32,61 +26,130 @@
         <p><b>Clica sobre cada una de las fotos para descubrir más.</b></p>
       </div>
       <div class="grid">
-        <button onclick="openModal()"></button>
-        <button onclick="openModal()"></button>
-        <button onclick="openModal()"></button>
-        <button onclick="openModal()"></button>
-        <button onclick="openModal()"></button>
-        <button onclick="openModal()"></button>
-        <button onclick="openModal()"></button>
-        <button onclick="openModal()"></button>
-        <button onclick="openModal()"></button>
+        <button
+          onclick="openModal(this)"
+          style="background-image: url('assets/images/albert.jpg')"
+          onmouseover="this.style.backgroundImage='url(assets/images/albert-hover.jpg)';"
+          onmouseout="this.style.backgroundImage='url(assets/images/albert.jpg)';"
+        ></button>
+        <button
+          onclick="openModal(this)"
+          style="background-image: url('assets/images/daniela.jpg')"
+          onmouseover="this.style.backgroundImage='url(assets/images/daniela-hover.jpg)';"
+          onmouseout="this.style.backgroundImage='url(assets/images/daniela.jpg)';"
+        ></button>
+        <button
+          onclick="openModal(this)"
+          style="background-image: url('assets/images/ricard.jpg')"
+          onmouseover="this.style.backgroundImage='url(assets/images/ricard-hover.jpg)';"
+          onmouseout="this.style.backgroundImage='url(assets/images/ricard.jpg)';"
+        ></button>
+        <button
+          onclick="openModal(this)"
+          style="background-image: url('assets/images/laia.jpg')"
+          onmouseover="this.style.backgroundImage='url(assets/images/laia-hover.jpg)';"
+          onmouseout="this.style.backgroundImage='url(assets/images/laia.jpg)';"
+        ></button>
+        <button
+          onclick="openModal(this)"
+          style="background-image: url('assets/images/jaume.jpg')"
+          onmouseover="this.style.backgroundImage='url(assets/images/jaume-hover.jpg)';"
+          onmouseout="this.style.backgroundImage='url(assets/images/jaume.jpg)';"
+        ></button>
+        <button
+          onclick="openModal(this)"
+          style="background-image: url('assets/images/clara.jpg')"
+          onmouseover="this.style.backgroundImage='url(assets/images/clara-hover.jpg)';"
+          onmouseout="this.style.backgroundImage='url(assets/images/clara.jpg)';"
+        ></button>
+        <button
+          onclick="openModal(this)"
+          style="background-image: url('assets/images/luis-angel.jpg')"
+          onmouseover="this.style.backgroundImage='url(assets/images/luis-angel-hover.jpg)';"
+          onmouseout="this.style.backgroundImage='url(assets/images/luis-angel.jpg)';"
+        ></button>
+        <button
+          onclick="openModal(this)"
+          style="background-image: url('assets/images/anna.jpg')"
+          onmouseover="this.style.backgroundImage='url(assets/images/anna-hover.jpg)';"
+          onmouseout="this.style.backgroundImage='url(assets/images/anna.jpg)';"
+        ></button>
+        <button
+          onclick="openModal(this)"
+          style="background-image: url('assets/images/xavier.jpg')"
+          onmouseover="this.style.backgroundImage='url(assets/images/xavier-hover.jpg)';"
+          onmouseout="this.style.backgroundImage='url(assets/images/xavier.jpg)';"
+        ></button>
       </div>
     </div>
 
-    <!-- MODAL -->
     <div class="modal" id="modal">
       <div class="modal-content">
-        <img src="https://via.placeholder.com/100" alt="Profile" />
+        <button class="close-btn" onclick="closeModal()">&times;</button>
+        <div class="modal-left">
+          <img id="modal-img" src="assets/images/albert.jpg" alt="Profile" />
+        </div>
         <div class="modal-details">
-          <img src="https://via.placeholder.com/200" alt="Detail Image" />
+          <div class="image-text">
+            <img src="assets/images/albert-text.svg" alt="Detail Image" />
+          </div>
+
           <div>
-            <label>Dato 1:</label>
-            <p>Texto de ejemplo</p>
+            <label>NOM PROPI</label>
+            <p>Albert Sabater Coll</p>
           </div>
           <div>
-            <label>Dato 2:</label>
-            <p>Texto de ejemplo</p>
+            <label>ACTUALMENT EM DEDICO...</label>
+            <p>
+              A dissenyar eines d’avaluació de sistemes d’intel·ligència
+              artificial tenint en compte consideracions ètiques, socials i
+              legals. També a que les dades que s’utilitzen, entre elles les
+              poblacionals, siguin de qualitat. Tot això ho faig des de
+              l’Observatori d’Ètica en Intel·ligència Artificial de Catalunya i
+              com a professor Serra Húnter a la Universitat de Girona.
+            </p>
           </div>
           <div>
-            <label>Dato 3:</label>
-            <p>Texto de ejemplo</p>
+            <label>M'INSPIRA...</label>
+            <p>
+              Treballar i aprendre constantment en equips interdisciplinars i,
+              és clar, amb un demògraf/a ben a prop per recordar-nos que
+              l’estructura és importat i que no som ni molts ni moltes, sinó que
+              falta una millor distribució dels recursos.
+            </p>
           </div>
           <div>
-            <label>Dato 4:</label>
-            <p>Texto de ejemplo</p>
+            <label>M'AGRADARIA</label>
+            <p>
+              Com a investigador, que la curiositat sempre s’imposi a l’apatia i
+              que la primera la puguem compartir i la segona oblidar. També, és
+              clar, tenir prou temps per escoltar, llegir, escriure, pensar i
+              actuar (en aquest ordre). 
+            </p>
           </div>
           <div>
-            <label>Dato 5:</label>
-            <p>Texto de ejemplo</p>
+            <label>T'HAS PREGUNTAT MAI...</label>
+            <p>
+              Què passaria si cap persona parlés de la migració o diversitat
+              poblacional com un problema i s’utilitzés el concepte des d’un
+              prisma eminentment demogràfic?
+            </p>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- JAVASCRIPT -->
-
     <script>
-      function openModal() {
-        document.getElementById('modal').style.display = 'flex';
+      function openModal(button, imgSrc) {
+        let modal = document.getElementById('modal');
+        let modalImg = document.getElementById('modal-img');
+        modalImg.src = imgSrc;
+        modal.style.display = 'flex';
       }
 
-      window.onclick = function (event) {
-        let modal = document.getElementById('modal');
-        if (event.target === modal) {
-          modal.style.display = 'none';
-        }
-      };
+      function closeModal() {
+        document.getElementById('modal').style.display = 'none';
+      }
     </script>
   </body>
 </html>
