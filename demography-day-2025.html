@@ -5,28 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Demography day 2025</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
       <div class="text-content">
-        <h1>Título Principal</h1>
-        <h2>Subtítulo</h2>
+        <h1>Trayectorias que trasnsforman sociedades</h1>
+        <h2>
+          Celebramos el día de la demografía compartiendo estas trayectorias
+        </h2>
         <p>
-          Este es un párrafo de ejemplo para la landing page. Aquí puedes
-          agregar información relevante.
+          Lorem ipsum dolor sit amet consectetur. Vivamus dignissim risus mollis
+          tellus habitant leo at imperdiet enim. Sed malesuada ullamcorper
+          penatibus ipsum. Risus maecenas aliquam massa leo amet eu ullamcorper.
+          Erat ridiculus erat elementum lectus ultrices in pulvinar. Lorem ipsum
+          dolor sit amet consectetur. Vivamus dignissim risus mollis tellus
+          habitant leo at imperdiet enim. Sed malesuada ullamcorper penatibus
+          ipsum. Risus maecenas aliquam massa leo amet eu ullamcorper. Erat
+          ridiculus erat elementum lectus ultrices in pulvinar.
         </p>
+        <p><b>Clica sobre cada una de las fotos para descubrir más.</b></p>
       </div>
       <div class="grid">
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
+        <button onclick="openModal()"></button>
+        <button onclick="openModal()"></button>
+        <button onclick="openModal()"></button>
+        <button onclick="openModal()"></button>
+        <button onclick="openModal()"></button>
+        <button onclick="openModal()"></button>
+        <button onclick="openModal()"></button>
+        <button onclick="openModal()"></button>
+        <button onclick="openModal()"></button>
       </div>
     </div>
+
+    <!-- MODAL -->
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <img src="https://via.placeholder.com/100" alt="Profile" />
+        <div class="modal-details">
+          <img src="https://via.placeholder.com/200" alt="Detail Image" />
+          <div>
+            <label>Dato 1:</label>
+            <p>Texto de ejemplo</p>
+          </div>
+          <div>
+            <label>Dato 2:</label>
+            <p>Texto de ejemplo</p>
+          </div>
+          <div>
+            <label>Dato 3:</label>
+            <p>Texto de ejemplo</p>
+          </div>
+          <div>
+            <label>Dato 4:</label>
+            <p>Texto de ejemplo</p>
+          </div>
+          <div>
+            <label>Dato 5:</label>
+            <p>Texto de ejemplo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+      function openModal() {
+        document.getElementById('modal').style.display = 'flex';
+      }
+
+      window.onclick = function (event) {
+        let modal = document.getElementById('modal');
+        if (event.target === modal) {
+          modal.style.display = 'none';
+        }
+      };
+    </script>
   </body>
 </html>

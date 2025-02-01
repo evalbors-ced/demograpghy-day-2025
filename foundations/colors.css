@@ -1,0 +1,42 @@
+:root {
+  /*  Neutral Colors */
+  --white: #ffffff;
+  --soft-grey: #bdbec0;
+  --grey-medium: #909090;
+  --grey: #666666;
+  --black: #000000;
+  --background: #f5f5f5;
+
+  /*  CED Colors */
+  --turquoise: #20798b;
+  --turquoise-darken: #105a69;
+  --turquoise-light: #bcd7dc;
+  --orange: #e18353;
+  --orange-dark: #682503;
+  --purple: #625181;
+  --pink: #98356f;
+  --pink-light: #ff9db5;
+  --aqua: #7adcca;
+  --aqua-light: #91d9ca;
+  --yellow: #ffd55f;
+  --yellow-dark: #aa5a10;
+
+  /*  Alert Colors */
+  --warning-bg: #fff7da;
+  --warning: #aa8a33;
+  --danger-bg: #fadbdb;
+  --danger: #db1111;
+  --success-bg: #e1f5e4;
+  --success: #3f8048;
+  --info-bg: #eee5ff;
+  --info: #625181;
+  --disabled: #5b5b5b;
+}
+
+.purple {
+  color: var(--purple);
+}
+
+.background {
+  color: var(--background);
+}

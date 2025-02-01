@@ -8,4 +8,4 @@ Landing para la el día de la demografía
 
 # Ignora la carpeta node_modules
 
-stories
+.stories

@@ -1,0 +1,79 @@
+:root {
+  --primary: 'Nexa';
+  --secondary: 'Source Sans 3';
+}
+
+@font-face {
+  font-family: 'Source Sans 3';
+  src: url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('/assets/fonts/Nexa-Book.otf') format('opentype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Nexa';
+  src: url('/assets/fonts/Nexa-Light.otf') format('opentype');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('/assets/fonts/Nexa-Bold.otf') format('opentype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Nexa';
+  src: url('/assets/fonts/NexaHeavy.otf') format('opentype');
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'Nexa';
+  src: url('/assets/fonts/NexaBlack.otf') format('opentype');
+  font-weight: 900;
+}
+
+h1 {
+  font-family: var(--primary);
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-family: var(--primary);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: var(--primary);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.125rem;
+  font-family: var(--primary);
+  font-weight: 700;
+  padding-top: 0.5rem;
+  color: var(--grey);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1rem;
+  font-family: var(--secondary);
+  line-height: 150%;
+  color: var(--grey);
+}
+
+b {
+  font-weight: bold;
+  font-family: var(--primary);
+  color: var(--purple);
+}
