@@ -7,59 +7,22 @@
 
 @font-face {
   font-family: 'Nexa';
-  src: url('/assets/fonts/Nexa-Book.otf') format('opentype');
-  font-weight: 400;
-}
-@font-face {
-  font-family: 'Nexa';
-  src: url('/assets/fonts/Nexa-Light.otf') format('opentype');
-  font-weight: 100;
-}
-
-@font-face {
-  font-family: 'Nexa';
-  src: url('/assets/fonts/Nexa-Bold.otf') format('opentype');
-  font-weight: 700;
-}
-@font-face {
-  font-family: 'Nexa';
-  src: url('/assets/fonts/NexaHeavy.otf') format('opentype');
+  src: url('../assets/fonts/Nexa-Heavy.otf') format('opentype');
   font-weight: 800;
-}
-@font-face {
-  font-family: 'Nexa';
-  src: url('/assets/fonts/NexaBlack.otf') format('opentype');
-  font-weight: 900;
 }
 
 h1 {
   font-family: var(--primary);
-  font-size: 2rem;
+  font-size: 40px;
   font-weight: 800;
+  color: var(--purple);
 }
 
 h2 {
   font-family: var(--primary);
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 700;
-}
-
-h3 {
-  font-family: var(--primary);
-  font-size: 1.25rem;
-  font-weight: 700;
-}
-
-h4 {
-  font-size: 1.125rem;
-  font-family: var(--primary);
-  font-weight: 700;
-  padding-top: 0.5rem;
-  color: var(--grey);
-}
-
-.uppercase {
-  text-transform: uppercase;
+  color: var(--purple);
 }
 
 p {
@@ -74,6 +37,7 @@ b {
   font-family: var(--primary);
   color: var(--purple);
 }
+
 label {
   color: var(--purple);
   font-family: var(--primary);
